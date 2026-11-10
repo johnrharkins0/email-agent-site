@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>email-agent privacy</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --link: #0969da; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --link: #4493f8; } }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, sans-serif; max-width: 40rem; margin: 3rem auto; padding: 0 16px; }
+  a { color: var(--link); } p.muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<h1>email-agent privacy policy</h1>
+<p>email-agent is used only by its owner, on the owner's own Google account. No other person's account is connected to it.</p>
+
+<h2>Data it accesses</h2>
+<ul>
+  <li>Gmail: the owner's messages and labels, to read, label, archive, trash and restore them, and to place a daily summary in the inbox. It does not send email.</li>
+  <li>Google Calendar: it creates events only after the owner approves each one.</li>
+  <li>Google Drive and Sheets: only the spreadsheet the app itself creates, which holds the owner's settings and a log of changes.</li>
+</ul>
+
+<h2>How the data is used and stored</h2>
+<p>The data is used only to sort the owner's mail and prepare the owner's summary. Results are stored in the owner's own Gmail labels and Google Sheet. To classify a message, the app sends its sender, subject and text to Anthropic's Claude API, which returns category labels. Nothing is sold, used for advertising, or shared with anyone else.</p>
+<p>email-agent's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Removing access</h2>
+<p>The owner can revoke access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+<p class="muted">Last updated November 9, 2026.</p>
+</body>
+</html>
